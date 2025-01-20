@@ -1,0 +1,16 @@
+{
+  "name": "top",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nxcache/core": "workspace:^"
+  }
+}
