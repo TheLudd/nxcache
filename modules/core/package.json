@@ -6,7 +6,7 @@
   "type": "module",
   "exports": "./generated/output.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo testless",
     "generate": "mkdir -p generated && pnpm generate-code core > generated/output.js"
   },
   "dependencies": {

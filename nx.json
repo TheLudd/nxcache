@@ -1,0 +1,23 @@
+{
+  "extends": "nx/presets/npm.json",
+  "namedInputs": {
+    "source": ["{projectRoot}/package.json", "{projectRoot}/generated/**/*"],
+    "generateSource": ["{workspaceRoot}/tools/generator/bin/**/*"],
+  },
+  "targetDefaults": {
+    "generate": {
+      "inputs": ["generateSource"],
+      "outputs": ["{projectRoot}/generated"],
+      "cache": true
+    },
+    "test": {
+      "dependsOn": ["^generate"],
+      "inputs": [
+        "source",
+        "^source",
+      ],
+      "cache": true
+    }
+  },
+  "defaultBase": "master"
+}
