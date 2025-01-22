@@ -13,7 +13,7 @@
     "test": {
       "dependsOn": ["^generate"],
       "inputs": [
-        { "dependentTasksOutputFiles": "generated/*.js" },
+        { "dependentTasksOutputFiles": "**/generated/*.js" },
         "source",
         "^source",
       ],
